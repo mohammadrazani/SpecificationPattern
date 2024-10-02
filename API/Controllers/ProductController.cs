@@ -17,7 +17,7 @@ namespace API.Controllers
             _productService = productService;
         }
 
-        public async Task<List<Product>> GetAll()
+        public async Task<List<Product>> GetAAvailableProducts()
         {
             return await _productService
                          .GetAll(new AvailableProductSpecification())
